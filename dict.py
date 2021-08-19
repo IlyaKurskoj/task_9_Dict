@@ -1,6 +1,9 @@
 # dict_1={"word1":"rat","word2":"muose","age":8}
 # print(dict_1)
 # print(dict_1["word1"])
+
+from termcolor import colored
+
 dict_rec={"наименование":"Мясо",
           "аннотация":"вкусный кусок свежего мяса",
           "время приготовления":7,
@@ -30,4 +33,5 @@ dict_rec3={"наименование":"вареное яйцо",
            "список ингредиентов":["яйцо","вода"]
            }
 dictionary={"rec1":dict_rec,"rec2":dict_rec2,"rec3":dict_rec3}
-print(dictionary)
+from termcolor import colored
+print ("",colored(dictionary["rec1"],'green'),"\n", colored(dictionary["rec2"],'red'),"\n",colored(dictionary["rec3"],'blue'))
